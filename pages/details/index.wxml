@@ -76,7 +76,7 @@
   <view class='gray-text'>加载中...</view>
 </view>
 <!-- 分享 -->
-<view class="cu-modal bottom-modal {{modalShare?'show':''}}">
+<view class="cu-modal bottom-modal {{modalShare?'show':''}}" bindtap="hideModalshare">
   <view class="cu-dialog">
     <view class="cu-bar bg-white justify-end">
       <view class="content">分享文章</view>
@@ -89,8 +89,8 @@
         </button>
         <text>微信好友</text>
       </view>
-      <view class="article-share">
-        <button class="bg-white xl" bindtap="shareFriends" wx:if="{{shareIsOpen}}">
+      <view class="article-share" wx:if="{{shareIsOpen}}" bindtap="shareFriends">
+        <button class="bg-white xl"  >
           <image src="/images/icon/poster.svg"></image>
         </button>
         <text>生成海报</text>
