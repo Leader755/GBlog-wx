@@ -55,7 +55,7 @@ GBlog-wx：微信小程序博客
 
 * 配置
 
-  将`config`中有个`api-tmp.js`文件重命名为`api.js`。
+  # 将`config`中有个`api-tmp.js`文件重命名为`api.js` （重点）。
 
   修改如下配置：
 
